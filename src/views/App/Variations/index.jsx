@@ -112,7 +112,9 @@ const Variations = () => {
         style={{
           border: "1px solid dodgerblue",
           color: "dodgerblue",
-          padding: "5px 10px",
+          padding: "8px 10px",
+          background: "white",
+          borderRadius: "5px",
         }}
       />
     ),

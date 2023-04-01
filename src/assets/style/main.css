@@ -100,16 +100,3 @@
 body {
   margin: 0;
 }
-
-:where(.css-dev-only-do-not-override-1e3x2xa).ant-table-wrapper
-  .ant-table-filter-trigger {
-  border: 1px solid dodgerblue;
-  color: dodgerblue;
-  padding: 5px 10px;
-}
-:where(.css-dev-only-do-not-override-1e3x2xa).ant-table-wrapper
-  .ant-table-filter-trigger:hover {
-  border: 1px solid rgb(113, 175, 237);
-  color: dodgerblue;
-  padding: 5px 10px;
-}
