@@ -110,7 +110,9 @@ const Variations = () => {
     filterIcon: (filtered) => (
       <SearchOutlined
         style={{
-          color: filtered ? "#1890ff" : undefined,
+          border: "1px solid dodgerblue",
+          color: "dodgerblue",
+          padding: "5px 10px",
         }}
       />
     ),

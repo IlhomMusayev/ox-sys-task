@@ -1,4 +1,4 @@
-import AppLayout from "Layouts/AppLayout";
+import AppLayout from "layouts/AppLayout";
 import { Outlet } from "react-router-dom";
 
 export default function Home() {
