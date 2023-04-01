@@ -1,7 +1,4 @@
-import axios from "axios";
-import { API_URL } from "configs/constants";
 import QueryString from "qs";
-import { logout } from "utils/auth-provider";
 import mainApiInstence from "./mainApiInstence";
 
 export default class VariationsApi {
