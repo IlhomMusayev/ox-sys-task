@@ -3,8 +3,7 @@ import { subdomain } from "configs/constants";
 import { getToken } from "contexts/AuthContext";
 import { logout } from "utils/auth-provider";
 
-export const mainUrl = () =>
-  process.env.API_URL || `https://${subdomain}.ox-sys.com/`;
+export const mainUrl = () => process.env.API_URL || `https://toko.ox-sys.com/`;
 
 const mainApiInstence = axios.create({
   baseURL: mainUrl(),

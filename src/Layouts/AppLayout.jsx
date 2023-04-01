@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 import {
-  ApartmentOutlined,
-  DashboardOutlined,
   LogoutOutlined,
   MenuFoldOutlined,
   MenuUnfoldOutlined,
 } from "@ant-design/icons";
 import { Button, Layout, Menu, theme } from "antd";
 import { useLocation, useNavigate } from "react-router-dom";
-import { NavigationConstants } from "configs/NavigationConstants";
 import { logout } from "utils/auth-provider";
 import Icon from "utils/Icon";
+import { NavigationConfig } from "configs/NavigationConfig";
 
 const { Header, Sider, Content } = Layout;
 
@@ -69,7 +67,7 @@ const AppLayout = ({ children }) => {
           defaultSelectedKeys={[location.pathname]}
           onSelect={(e) => history(e.key)}
         >
-          {NavigationConstants.map((item) => (
+          {NavigationConfig.map((item) => (
             <Menu.Item
               key={item.key}
               icon={item.icon ? <Icon type={item?.icon} /> : null}

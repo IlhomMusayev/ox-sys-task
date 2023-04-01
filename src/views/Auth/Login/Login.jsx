@@ -28,7 +28,7 @@ export default function Login() {
           setLoading(false);
         })
         .catch((err) => {
-          message.error(err.message);
+          message.error("Username or password is incorrect");
           setLoading(false);
         });
     } catch (error) {
@@ -39,6 +39,7 @@ export default function Login() {
     <div
       style={{
         height: "100vh",
+        textAlign: "center",
       }}
     >
       <div className="container d-flex flex-column justify-content-center h-100">
@@ -55,7 +56,7 @@ export default function Login() {
             <Card>
               <Row justify="center">
                 <Col xs={24} sm={24} md={20} lg={20}>
-                  <h2>Login</h2>
+                  <h1>Login</h1>
                   <Form
                     name="normal_login"
                     className="login-form"
@@ -77,6 +78,7 @@ export default function Login() {
                           <UserOutlined className="site-form-item-icon" />
                         }
                         placeholder="Username"
+                        size="large"
                       />
                     </Form.Item>
                     <Form.Item
@@ -94,6 +96,7 @@ export default function Login() {
                         }
                         type="password"
                         placeholder={"Password"}
+                        size="large"
                       />
                     </Form.Item>
                     <Form.Item>
@@ -101,6 +104,8 @@ export default function Login() {
                         loading={loading}
                         type="primary"
                         htmlType="submit"
+                        size="large"
+                        style={{ width: "100%" }}
                       >
                         Sign in
                       </Button>

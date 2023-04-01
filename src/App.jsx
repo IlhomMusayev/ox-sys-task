@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "views/App/Home/Home";
-import Login from "views/App/Login/Login";
+import Login from "views/Auth/Login/Login";
 import PrivateRoute from "./routes/PrivateRoute";
 import PublicRoute from "./routes/PublicRoute";
 import Variations from "views/App/Variations";

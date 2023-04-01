@@ -1,4 +1,4 @@
-const localStorageKey = "token";
+import { localStorageKey } from "configs/constants";
 
 async function logout() {
   window.localStorage.removeItem(localStorageKey);

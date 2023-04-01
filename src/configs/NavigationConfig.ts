@@ -1,9 +1,9 @@
 import { ApartmentOutlined, DashboardOutlined } from "@ant-design/icons";
 
-export const NavigationConstants: NavigationType[] = [
+export const NavigationConfig: NavigationType[] = [
   {
     key: "/",
-    icon: "DashboardOutlined",
+    icon: "HomeOutlined",
     label: "Dashboard",
     value: "/dashboard",
   },

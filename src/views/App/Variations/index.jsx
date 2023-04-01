@@ -139,10 +139,20 @@ const Variations = () => {
   // Table columns
   const columns = [
     {
+      title: "Id",
+      dataIndex: "id",
+      width: "5%",
+    },
+    {
       title: "Name",
       dataIndex: "name",
       width: "25%",
       ...getColumnSearchProps("name"),
+    },
+    {
+      title: "Barcode",
+      dataIndex: "barcode",
+      width: "25%",
     },
     {
       title: "CreatedAt",
