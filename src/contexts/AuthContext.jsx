@@ -1,14 +1,23 @@
 import { createContext, useEffect, useState } from "react";
 
 const Context = createContext(null);
+export const setToken = (token) => {
+  window.localStorage.setItem("token", token);
+};
+export const getToken = () => {
+  return window.localStorage.getItem("token");
+};
+export const removeToken = () => {
+  window.localStorage.removeItem("token");
+};
 
 function Provider({ children }) {
-  const [state, setState] = useState(window.localStorage.getItem("token"));
+  const [state, setState] = useState(getToken());
   useEffect(() => {
     if (state) {
-      window.localStorage.setItem("token", state);
+      setToken(state);
     } else {
-      window.localStorage.removeItem("token");
+      removeToken();
     }
   }, [state]);
 

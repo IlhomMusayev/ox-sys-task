@@ -1,15 +1,14 @@
 import axios from "axios";
 import { API_URL } from "configs/constants";
+import QueryString from "qs";
+import { logout } from "utils/auth-provider";
+import mainApiInstence from "./mainApiInstence";
 
 export default class VariationsApi {
-  static async GetVariations(data: any) {
-    return axios({
-      method: "GET",
-      url: API_URL + "/variations",
-      headers: {
-        "Content-type": "application/json",
-        Authorization: `Bearer ${localStorage.getItem("token")}`,
-      },
-    }).then((r) => r.data);
+  static async GetVariations(filter: any) {
+    return mainApiInstence
+      .get(`/variations?${QueryString.stringify(filter)}`)
+      .then((r) => r.data)
+      .catch((e) => e);
   }
 }

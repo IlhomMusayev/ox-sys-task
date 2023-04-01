@@ -5,6 +5,7 @@ import PrivateRoute from "./routes/PrivateRoute";
 import PublicRoute from "./routes/PublicRoute";
 import Variations from "views/App/Variations";
 import Dashboard from "views/App/Dashboard";
+import { removeToken } from "contexts/AuthContext";
 
 function App() {
   return (

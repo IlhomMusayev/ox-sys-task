@@ -21,10 +21,10 @@ function client(
     .then(async (response) => {
       if (response.status === 401) {
         await auth.logout();
-        // window.location.assign("/");
+        window.location.assign("/");
       } else if (response.status === 403) {
         await auth.logout();
-        // window.location.assign("/");
+        window.location.assign("/");
       }
       const data = await response.json();
       if (response.ok) {
