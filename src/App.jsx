@@ -5,7 +5,7 @@ import PrivateRoute from "./routes/PrivateRoute";
 import PublicRoute from "./routes/PublicRoute";
 import Variations from "views/App/Variations";
 import Dashboard from "views/App/Dashboard";
-import { removeToken } from "contexts/AuthContext";
+import Search from "views/App/Search";
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />}>
           {/* Dashboard page */}
           <Route path="/variations" element={<Variations />} />
+          <Route path="/search" element={<Search />} />
           <Route path="/" element={<Dashboard />} />
         </Route>
       </Route>

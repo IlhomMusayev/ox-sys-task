@@ -1,5 +1,3 @@
-import { ApartmentOutlined, DashboardOutlined } from "@ant-design/icons";
-
 export const NavigationConfig: NavigationType[] = [
   {
     key: "/",
@@ -12,6 +10,12 @@ export const NavigationConfig: NavigationType[] = [
     icon: "ApartmentOutlined",
     label: "Variations",
     value: "/variations",
+  },
+  {
+    key: "/search",
+    icon: "SearchOutlined",
+    label: "Search",
+    value: "/search",
   },
 ];
 

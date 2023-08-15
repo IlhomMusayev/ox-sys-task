@@ -1,4 +1,3 @@
-import { LockOutlined } from "@ant-design/icons";
 import { Card, Col, Row, Skeleton } from "antd";
 import { LockIcon } from "assets/icons/lockIcon";
 import React from "react";

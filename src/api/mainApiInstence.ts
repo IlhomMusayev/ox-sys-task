@@ -1,5 +1,4 @@
 import axios, { AxiosRequestHeaders } from "axios";
-import { subdomain } from "configs/constants";
 import { getToken } from "contexts/AuthContext";
 import { logout } from "utils/auth-provider";
 
