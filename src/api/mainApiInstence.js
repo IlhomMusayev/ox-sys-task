@@ -14,7 +14,7 @@ const mainApiInstence = axios.create({
 mainApiInstence.interceptors.request.use(function (config) {
   // Do something before request is sent
 
-  config.headers = <AxiosRequestHeaders>{};
+  config.headers = {};
 
   config.headers.Authorization = "Bearer " + getToken();
 
