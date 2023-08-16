@@ -1,4 +1,4 @@
-import axios, { AxiosRequestHeaders } from "axios";
+import axios from "axios";
 import { getToken } from "contexts/AuthContext";
 import { logout } from "utils/auth-provider";
 
